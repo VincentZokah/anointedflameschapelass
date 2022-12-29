@@ -1,0 +1,411 @@
+:root{
+    --primary:#0d6efd;
+    --dark:#21252f;
+    --boby:rgb(87, 87, 87);
+    --box-shadow:0 8px 22px rgba(0,0,0,0.1);
+}
+body{
+    font-family: "Merriweather+San","sans serif";
+    line-height: 1.7;
+    color: var(--boby);
+}
+.nav-link{
+    margin-right: 2px;
+    margin-left: 2px;
+    color: rgb(40, 18, 139);
+    font-family: 'Merriweather+Sans', sans-serif;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: rgb(95, 31, 31);
+}
+.nav-link{
+    margin-right: 2px;
+    margin-left: 2px;
+    color: rgb(40, 18, 139);
+    font-family: 'Merriweather+Sans', sans-serif;
+    text-transform: capitalize;
+
+}
+h1,h2,h3,h4,h5,h6,
+.display-4{
+    color: var(--dark);
+    font-weight: 700;
+}
+img{
+    width: 100%;
+}
+a{
+    color: rgb(243, 235, 235);
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.top.nav{
+    background-color: rgb(192, 9, 208);
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.top.nav i,
+.top.nav span{
+    vertical-align: middle;
+}
+.social-links a{
+    width: 34px;
+    height: 34px;
+    background-color: rgba(74, 70, 70, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 20px;
+    color:white;
+    border-radius: 100%;
+}
+.social-links a:hover{
+    background-color: rgb(249, 247, 247);
+    transition: all 0.4s ease;
+}
+.social-links a:hover i{
+ transform: scale(0.85);
+}
+a:hover .bxl-facebook-circle{
+    color: #1877F2;
+}
+a:hover .bxl-youtube{
+    color:#CD201F ;
+}
+a:hover .bxl-whatsapp{
+    color: #25D366;
+}
+
+a:hover .bx-tv{
+    color: #4C75A3;
+}
+a:hover .bxl-telegram{
+    color:rgb(59, 104, 250) ;
+}
+.top.nav p{
+   margin-bottom: 0;
+   display: inline;
+   margin-right: 1rem;
+}
+.main{
+    background: url(./con7.jpg)no-repeat;
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 2;}
+.main::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(14, 3, 3, 0.7);
+    z-index: -1;
+}
+.btn{
+    padding: 10px 14px;
+    border-width: 2px;
+    border-radius: 5px;
+}
+section{
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    transition: all 0.4s;
+}
+.card-effect:hover{
+    box-shadow: none;
+    transform:translateY(5px);
+
+}
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: white;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+.Group{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.Group::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: -100;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Group:hover.iconbox{
+    background-color: white;
+    color: var(--primary);
+}
+.Group:hover h5,
+.Group:hover p{
+    color: white;
+}
+.Group:hover::after{
+    opacity: 1;
+    top: 0;
+}
+.Love{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.Love::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: -100;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Love:hover.iconbox{
+    background-color: white;
+    color: var(--primary);
+}
+.Love:hover h5,
+.Love:hover p{
+    color: white;
+}
+.Love:hover::after{
+    opacity: 1;
+    top: 0;
+}
+.Spirit_Filled{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.Spirit_Filled::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: -100;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Spirit_Filled:hover.iconbox{
+    background-color: white;
+    color: var(--primary);
+}
+.Spirit_Filled:hover h5,
+.Spirit_Filled:hover p{
+    color: white;
+}
+.Spirit_Filled:hover::after{
+    opacity: 1;
+    top: 0;
+}
+.Conversation{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.Conversation::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: -100;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Conversation:hover.iconbox{
+    background-color: white;
+    color: var(--primary);
+}
+.Conversation:hover h5,
+.Conversation:hover p{
+    color: white;
+}
+.Conversation:hover::after{
+    opacity: 1;
+    top: 0;
+}.Ministries{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.Ministries::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: -100;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Ministries:hover.iconbox{
+    background-color: white;
+    color: var(--primary);
+}
+.Ministries:hover h5,
+.Ministries:hover p{
+    color: white;
+}
+.Ministries:hover::after{
+    opacity: 1;
+    top: 0;
+}
+.Aim{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.Aim::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: -100;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+}
+.Aim:hover.iconbox{
+    background-color: white;
+    color: var(--primary);
+}
+.Aim:hover h5,
+.Aim:hover p{
+    color: white;
+}
+.Aim:hover::after{
+    opacity: 1;
+    top: 0;
+}
+.col-img{
+    background: url(./teach.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+.project {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.project .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items:flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+    background-color: rgba(54, 53, 53, 0.6);
+}
+.project img{
+    transition: all 0.4s ease;
+}
+.project:hover .overlay{
+    opacity: 1;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.leaders img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+
+}
+.social-icons a{
+    height: 34px;
+    width: 34px;
+    background-color:rgb(73, 29, 247);
+    border-radius: 2px solid var(--primary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+    border:2px solid var(--primarys);
+
+}
+.social-icons a:hover{
+    background-color: transparent;
+    border-color: var(--primary);
+    color: #3b27f0;
+}
+.activities i{
+    font-size:20px ;
+    color: blueviolet;
+}
+.activities ul li{
+    margin-top: 8px;
+}
+form input.form-control{
+    height: 56px;
+
+}
+form.form-control{
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+.footer-top{
+    padding: 90px;
+    padding-bottom: 90px;
+    background-color: var(--dark);
+}
+.footer-top a{
+    color: var(--boby);
+}
+.footer-top a:hover{
+    color: white;
+}
+
+.logo{
+    width: 130px;
+}
+.footer-bottom{
+    background-color: var(--dark);
+}
